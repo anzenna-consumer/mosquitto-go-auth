@@ -82,7 +82,7 @@ func NewMysql(authOpts map[string]string, logLevel log.Level, hasher hashing.Has
 		mysqlOk = false
 		missingOptions += " mysql_dbname"
 	}
-
+	fmt.Printf("Hello World")
 	if user, ok := authOpts["mysql_user"]; ok {
 		mysql.User = user
 	} else {
@@ -107,7 +107,7 @@ func NewMysql(authOpts map[string]string, logLevel log.Level, hasher hashing.Has
 	if superuserQuery, ok := authOpts["mysql_superquery"]; ok {
 		mysql.SuperuserQuery = superuserQuery
 	}
-
+	
 	if aclQuery, ok := authOpts["mysql_aclquery"]; ok {
 		mysql.AclQuery = aclQuery
 	}
