@@ -152,7 +152,7 @@ func NewPostgres(authOpts map[string]string, logLevel log.Level, hasher hashing.
 	if postgres.SSLCert != "" {
 		connStr = fmt.Sprintf("%s sslcert=%s", connStr, postgres.SSLCert)
 	}
-
+	fmt.Printf("%s sslmode=%s sslrootcert=%s\n", connStr, postgres.SSLMode, postgres.SSLRootCert)
 	if tries, ok := authOpts["pg_connect_tries"]; ok {
 		connectTries, err := strconv.Atoi(tries)
 
