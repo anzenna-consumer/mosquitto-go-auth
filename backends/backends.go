@@ -79,7 +79,7 @@ func Initialize(authOpts map[string]string, logLevel log.Level, version string) 
 		superuserCheckers: make([]string, 0),
 		prefixes:          make(map[string]string),
 	}
-
+	fmt.Printf("Hello World")
 	//Disable superusers for all backends if option is set.
 	if authOpts["disable_superuser"] == "true" {
 		b.disableSuperuser = true
