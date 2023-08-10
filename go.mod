@@ -16,7 +16,7 @@ require (
 	github.com/robertkrimen/otto v0.2.1
 	github.com/sirupsen/logrus v1.9.2
 	github.com/smartystreets/goconvey v0.0.0-20190330032615-68dc04aab96a
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.4
 	go.mongodb.org/mongo-driver v1.11.6
 	golang.org/x/crypto v0.11.0
 	google.golang.org/grpc v1.55.0
