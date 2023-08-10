@@ -9,7 +9,7 @@ updates:
   - package-ecosystem: gomod
     directory: /
     schedule:
-      interval: weekly
+      interval: daily
     reviewers:
       - chinmayasharma
 
@@ -17,7 +17,7 @@ updates:
   - package-ecosystem: docker
     directory: /
     schedule:
-      interval: weekly
+      interval: daily
     reviewers:
       - chinmayasharma
 
@@ -25,6 +25,6 @@ updates:
   - package-ecosystem: github-actions
     directory: /
     schedule:
-      interval: weekly
+      interval: daily
     reviewers:
       - chinmayasharma
