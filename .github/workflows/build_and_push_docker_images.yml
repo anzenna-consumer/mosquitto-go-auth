@@ -18,7 +18,7 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       -
         name: Set Mosquitto version
         run: sed -i 's/ARG MOSQUITTO_VERSION=${{ env.DOCKERFILE_MOSQUITTO_VERSION }}/ARG MOSQUITTO_VERSION=${{ env.MOSQUITTO_VERSION_1 }}/' Dockerfile
@@ -58,7 +58,7 @@ jobs:
     steps:
       -
         name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       -
         name: Set Mosquitto version
         run: sed -i 's/ARG MOSQUITTO_VERSION=${{ env.DOCKERFILE_MOSQUITTO_VERSION }}/ARG MOSQUITTO_VERSION=${{ env.MOSQUITTO_VERSION_2 }}/' Dockerfile
