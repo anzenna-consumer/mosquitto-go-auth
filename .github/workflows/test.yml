@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v2
       -
         name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v3
       -
         name: Set Mosquitto version
         run: sed -i 's/ARG MOSQUITTO_VERSION=${{ env.DOCKERFILE_MOSQUITTO_VERSION }}/ARG MOSQUITTO_VERSION=${{ env.MOSQUITTO_VERSION_1 }}/' Dockerfile.runtest
@@ -38,7 +38,7 @@ jobs:
         run: sed -i 's/ARG MOSQUITTO_VERSION=${{ env.DOCKERFILE_MOSQUITTO_VERSION }}/ARG MOSQUITTO_VERSION=${{ env.MOSQUITTO_VERSION_2 }}/' Dockerfile.runtest
       -
         name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v1
+        uses: docker/setup-buildx-action@v3
       -
         name: Test
         run: |
